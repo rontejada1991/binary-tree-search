@@ -23,14 +23,6 @@ class BST
     end
   end
 
-  def in_order_traversal(focus_node=@root)
-    if(!focus_node.nil?)
-      in_order_traversal(focus_node.left)
-      print "#{focus_node.value} "
-      in_order_traversal(focus_node.right)
-    end
-  end
-
   def insert(value)
     new_node = Node.new(value)
 
